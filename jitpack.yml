@@ -1,7 +1,7 @@
 before_install:
+  - sdk install java 25-open
+  - sdk use java 25-open
   - sdk list java
-  - sdk install java 25-tem
-  - sdk use java 25-tem
 jdk:
   - openjdk21
 install:
