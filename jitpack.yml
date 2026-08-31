@@ -1,7 +1,9 @@
 before_install:
   - sdk list java
-  - sdk install java 25-tem
-  - sdk use java 25-tem
+  - sdk install java 21-tem
+  - sdk use java 21-tem
   - gradlew --version
 jdk:
-  - openjdk25
+  - openjdk21
+install:
+  - gradlew publishReleasePublicationToMavenLocal --stacktrace --debug
