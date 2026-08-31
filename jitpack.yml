@@ -1,4 +1,6 @@
 before_install:
+  # stick to java21 lts for now
+  # upgrade to java25 lts breaks javadoc generation
   - sdk install java 21-tem
   - sdk use java 21-tem
   - sdk list java
