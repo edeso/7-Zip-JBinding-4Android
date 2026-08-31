@@ -2,8 +2,8 @@ before_install:
   - sdk list java
   - sdk install java 21-tem
   - sdk use java 21-tem
-  - gradlew --version
+  - ./gradlew --version
 jdk:
   - openjdk21
 install:
-  - gradlew publishReleasePublicationToMavenLocal --stacktrace --debug
+  - ./gradlew publishReleasePublicationToMavenLocal --stacktrace --debug
